@@ -1,0 +1,20 @@
+#messageContainer2 {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center; /* Horizontally centers the inner div */
+  align-items: center; /* Vertically centers the inner div (optional) */
+}
+
+#messageContainer {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center; /* Horizontally centers the inner div */
+  align-items: center; /* Vertically centers the inner div (optional) */
+}
+
+#sendchecker {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center; /* Horizontally centers the inner div */
+  align-items: center; /* Vertically centers the inner div (optional) */
+}
