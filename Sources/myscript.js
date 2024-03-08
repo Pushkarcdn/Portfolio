@@ -24,3 +24,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
       // Handle any errors that occurred during the form submission
     });
 });
+
+window.onload = function() {
+  document.getElementById("my-form").submit();
+};
