@@ -24,17 +24,3 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
       // Handle any errors that occurred during the form submission
     });
 });
-
-function feedbackValidate() {
-
-  var blockedNames = ['robertfen'];
-  var name = document.forms['feedbackForm']['Name'].value;
-  name = name.toLowerCase();
-
-  if (blockedNames.includes(name)) {
-
-    window.open('https://www.youtube.com/watch?v=Ec2rmK9t5H8', '_blank');
-
-  }
-
-}
