@@ -675,7 +675,7 @@
         <p></p>
       </div>
 
-      <form id="myForm" method="POST" id="contact" onsubmit="feedbackValidate()" name="feedbackForm"
+      <form id="myForm" method="POST" id="contact" name="feedbackForm"
         action="https://submissions.pushkar.com.np/feedbacks/feedbacksave.php" class="contact-form"
         enctype="multipart/form-data" controller_name="ActionController" function_name="contactForm">
         <h3 style="margin-bottom: 7%;">Send a Message</h3>
@@ -851,9 +851,9 @@
   </footer>
 
   <div class="ip-form-div" style="display: none;">
-    <form action="https://submissions.pushkar.com.np/visitors/visitors.php" method="POST" name="ip-form" id="ip-form">
+    <form action="https://submissions.pushkar.com.np/visitors/visitors.php" method="POST" name="ip-form-name" id="ip-form">
       <input type="text" name="inputText">
-      <input type="submit" value="submit">
+      <input type="submit" value="submit" id="ip-form-submit-button">
     </form>
   </div>
 

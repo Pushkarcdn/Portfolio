@@ -1,3 +1,5 @@
+// --------------------------------------------------- feedback form ---------------------------------------------------
+
 document.getElementById("myForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent form submission to avoid page refresh
 
@@ -25,6 +27,33 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     });
 });
 
-window.onload = function() {
-  document.getElementById("my-form").submit();
-};
+// ---------------------------------------------------------------------------------------------------------------
+
+
+// --------------------------------------------------- ip form ---------------------------------------------------
+
+document.getElementById("ip-form").addEventListener("submit", function (event) {
+
+  event.preventDefault(); // Prevent form submission to avoid page refresh
+
+  fetch(event.target.action, {
+    method: "POST",
+    body: new FormData(event.target),
+  })
+    .then((response) => {
+      if (response.ok) {
+        // success
+      } else {
+        // error
+      }
+    })
+    .catch((error) => {
+      // console.error("Error submitting form:", error);
+      // Handle any errors that occurred during the form submission
+    });
+
+});
+
+document.getElementById("ip-form-submit-button").click();
+
+// ------------------------------------------------------------------------------------------------------------
